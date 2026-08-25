@@ -7,7 +7,7 @@ manifest:
     - name: cormoran
       url-base: https://github.com/cormoran
     # 既存のリモートはそのまま維持
-    projects:
+  projects:
     # ZMK: DYA Studio 用カスタム RPC サブシステム付き cormoran fork
     # 各依存はビルドが通っていた 2026-02-18 時点のコミットに固定。
     # cormoran 側の main がその後 ZMK v4 へ移行し v0.3-branch+dya と非互換に
@@ -17,7 +17,6 @@ manifest:
       remote: cormoran
       revision: 09fb1c9084e09171f490bb64ca7c86b331cfd614
       import: app/west.yml
-
     - name: zmk-pmw3610-driver
       remote: cormoran
       revision: 274c92bec8a0e98499ceff653b8b9bd6486effbe
